@@ -9,7 +9,7 @@
     <ValidationSummary />
 </EditForm>
 @code {
-    public Bug AddBug = new Bug();
+    public Bug AddBug { get; set; }
     [Inject]
     public IBugService BugService { get; set; }
 
